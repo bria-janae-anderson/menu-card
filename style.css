@@ -1,6 +1,7 @@
 body {
  background-color: brown;
  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-weight: bold;
  max-width: 40rem;
  margin: 40px auto;
  padding: 0 16px;
@@ -58,8 +59,8 @@ button:hover {
 /* The menu looks like a chalkboard */
 #menu-text {
     white-space: pre-line; /* each item on its own line */
-    background-color: peru;
-    color: burlywood;
+    background-color: rgb(205, 159, 114);
+    color: white;
     font-size: 1.2rem;
     line-height: 1.8;
     padding: 20px;

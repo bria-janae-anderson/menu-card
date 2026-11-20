@@ -5,6 +5,7 @@ let input = document.querySelector("#menu-input");
 let count = document.querySelector("#count");
 let menuText = document.querySelector("#menu-text");
 
+//Declaring the handle submit function
 function handleSubmit(event) {
     // Prevents the page reload after clicking the submit button
     event.preventDefault();
@@ -18,5 +19,5 @@ function handleSubmit(event) {
         menuText.textContent = menuText.textContent + menu[i].name + " - $" + menu[i].price + "\n";
     }
 }
-
+// Attach an event listener to the form that listens for submit
 form.addEventListener("submit", handleSubmit);
