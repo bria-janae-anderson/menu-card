@@ -4,7 +4,7 @@ body {
  max-width: 40rem;
  margin: 40px auto;
  padding: 0 16px;
- color: black;
+ color: white;
 }
 
 h1 {
@@ -64,6 +64,10 @@ button:hover {
     line-height: 1.8;
     padding: 20px;
     border-radius: 12px;
+}
+
+p {
+    text-align: center;
 }
 
 /* Hide the chalkboard until there's a menu on it */

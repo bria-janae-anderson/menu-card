@@ -1,14 +1,22 @@
 console.log("Hello from script.js!");
-
+// Get HTML Elements
 let form = document.querySelector("#menu-form");
 let input = document.querySelector("#menu-input");
 let count = document.querySelector("#count");
 let menuText = document.querySelector("#menu-text");
 
 function handleSubmit(event) {
+    // Prevents the page reload after clicking the submit button
     event.preventDefault();
+    // JSON.parse() converts JSON to an object - input.value captures the user input.value
     let menu = JSON.parse(input.value);
+    console.log(menu);
+    // Use textContent to inject text into the count paragraph
     count.textContent = "We have " + menu.length + " items today.";
+    menuText.textContent = "";
+    for (let i = 0; i < menu.length; i++) {
+        menuText.textContent = menuText.textContent + menu[i].name + " - $" + menu[i].price + "\n";
+    }
 }
 
 form.addEventListener("submit", handleSubmit);
